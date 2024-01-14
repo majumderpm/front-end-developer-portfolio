@@ -1,0 +1,240 @@
+.squares {
+  animation: move-left-right 1s infinite;
+  background: #ba54f5;
+  background: -webkit-linear-gradient(0deg, #ba54f5 0%, #e14eca 100%);
+  background: -o-linear-gradient(0deg, #ba54f5 0%, #e14eca 100%);
+  background: -moz-linear-gradient(0deg, #ba54f5 0%, #e14eca 100%);
+  background: linear-gradient(0deg, #ba54f5 0%, #e14eca 100%);
+  position: absolute;
+  transition: 0.5s ease-out;
+  overflow: hidden;
+  border-radius: 20%;
+}
+
+.squares.square1 {
+  animation: move-left-right 4s infinite;
+  height: 200px;
+  width: 200px;
+  opacity: 0.5;
+  left: 3%;
+  top: 0;
+  border-radius: 100%;
+}
+
+.squares.square2 {
+  animation: move-left-right 6s infinite;
+  height: 200px;
+  width: 200px;
+  opacity: 0.4;
+  right: 0;
+  top: 0;
+}
+
+.squares.square3 {
+  animation: move-left-right 5s infinite;
+  height: 200px;
+  width: 200px;
+  opacity: 0.1;
+  left: 0;
+  bottom: 0%;
+}
+
+.squares.square4 {
+  animation: move-left-right 10s infinite;
+  height: 100px;
+  width: 100px;
+  opacity: 0.9;
+  right: 27%;
+  top: 70%;
+  border-radius: 100%;
+}
+
+.squares.square5 {
+  animation: move-left-right 6s infinite;
+  height: 250px;
+  width: 250px;
+  opacity: 0.1;
+  left: 32%;
+  bottom: 29%;
+}
+
+.squares.square6 {
+  animation: move-left-right 9s infinite;
+  left: 10%;
+  top: 35%;
+  height: 80px;
+  width: 80px;
+  opacity: 0.8;
+  border-radius: 100%;
+}
+
+.squares.square7 {
+  animation: move-left-right 3s infinite;
+  width: 300px;
+  height: 300px;
+  right: 0;
+  bottom: 0%;
+  opacity: 0.1;
+  border-radius: 100%;
+}
+@media (max-width: 1024px) {
+  .squares.square2 {
+    height: 200px;
+    width: 200px;
+  }
+  .squares.square1 {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media (max-width: 767px) {
+  .squares.square2 {
+    height: 200px;
+    width: 200px;
+    right: -0;
+  }
+  .squares.square1 {
+    height: 120px;
+    width: 120px;
+    top: 0;
+  }
+  .squares.square5 {
+    width: 180px;
+    height: 180px;
+  }
+}
+
+@keyframes move-left-right {
+  0% {
+    transform: translateX(-10px);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(-10px);
+  }
+}
+
+.content_center {
+  text-align: center;
+  width: 100%;
+  max-width: 590px;
+}
+.banner {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.b_logo {
+  width: 20%;
+  margin-block-end: 20px;
+}
+.banner_info {
+  position: relative;
+}
+.content_center {
+  position: relative;
+  margin-top: -246px;
+}
+/* .content_center::after{
+       content: '';
+    position: absolute;
+    top: -52px;
+    right: 0;
+    width: 73%;
+    height: 405px;
+    border: 4px solid #ba54f5;
+    transform: rotate(45deg);
+  } */
+.banner_info {
+  position: relative;
+  top: 50px;
+  left: 45%;
+  width: 34%;
+  height: 50%;
+  border-top: 4px solid #ba54f5;
+  border-right: 4px solid #ba54f5;
+  transform: rotate(45deg);
+  /* background-color: #171941; */
+  /* transform: rotate(93deg); */
+  z-index: 9;
+  padding: 159px;
+}
+.banner_info::before {
+  content: "";
+  position: absolute;
+  top: 314px;
+  right: 0;
+  width: 120px;
+  height: 4px;
+  background-color: #ba54f5;
+}
+.banner_info::after {
+  content: "";
+  position: absolute;
+  top: 31px;
+  right: 280px;
+  width: 73px;
+  height: 4px;
+  background-color: #ba54f5;
+  transform: rotate(90deg);
+}
+
+@media (max-width: 991px) {
+  .inner .page-header.header-filter {
+    width: 100%;
+  }
+
+  .banner_info {
+    left: 56px;
+  }
+}
+
+@media (max-width: 767px) {
+  /* .content_center {
+    position: relative;
+    margin-top: -217px;
+} */
+  .banner_info {
+    padding: 121px;
+    top: -5px;
+    left: 84px;
+  }
+  .banner_info::before {
+    top: 238px;
+    right: -2px;
+  }
+  .banner_info::after {
+    top: 30px;
+    right: 205px;
+  }
+}
+
+
+
+@media (max-width: 480px) {
+  .banner_info {
+    top: 2px;
+    left: 27px;
+  }
+  .banner_info {
+    padding: 131px;
+  }
+  .banner_info::before {
+    top: 258px;
+  }
+  .banner_info::after {
+    top: 30px;
+    right: 225px;
+  }
+}
+@media (max-width: 395px) {
+  .banner_info {
+    left: 0;
+  }
+}

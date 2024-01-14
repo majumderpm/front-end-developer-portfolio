@@ -1,0 +1,23 @@
+
+:root{
+    --clr_pink: #e14eca;
+    --clr_blue: #ba54f5;
+    --clr_black: #000;
+    --clr_white: #fff;
+    --clr_darck_blue: #525f7f;
+    --clr_skyblue: #c0ccee;
+    --clr_accent_dark: #171941;
+
+    /* =========================== background */
+    
+    --bg_body_dark: #171941;
+    --bg_light: #ffcbff;
+    --bg_blue: #1c1e45;
+    --bg_bgbule: #1c2b50;
+    --bg_accent: #1f2251;
+    
+    /* =========================== background */
+    
+    --br_bs_clr: #363c4c;
+
+}
